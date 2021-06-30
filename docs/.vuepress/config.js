@@ -1,3 +1,6 @@
+const moment = require('moment');
+moment.locale('zh-CN');
+
 module.exports = {
     title:'CY的博客',
     description:'CY的博客,王长印,个人博客',
@@ -6,6 +9,18 @@ module.exports = {
       ['meta', { name: 'Keywords', href: 'CY的博客,王长印,个人博客' }],
       ['meta', { name: 'author', href: '王长印' }]
     ],
+
+    plugins: [
+      [
+        '@vuepress/last-updated',
+        {
+          transformer: (timestamp) => {
+            return moment(timestamp).format('llll'); // 2021年6月30日星期三 23:06
+          }
+        }
+      ]
+    ],
+
     themeConfig: {
       logo: '/assets/img/hero.png',
       lastUpdated: '更新时间', // string | boolean

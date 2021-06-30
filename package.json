@@ -12,5 +12,8 @@
     "url": "git@gitee.com:wcy_dch/docs.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
 }
