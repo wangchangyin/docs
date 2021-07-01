@@ -1,5 +1,5 @@
 module.exports = {
-    base:'/docs/',  //网站base
+    // base:'/docs/',  //网站base 填写了域名，不需要此配置
     title:'CY的博客',
     description:'CY的博客,王长印,个人博客',
     head: [
