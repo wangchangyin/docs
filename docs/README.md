@@ -16,5 +16,5 @@ footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 # Hello VuePress
 
-首页内容更新了
+这个首页的内容以及更新了，请注意查看
 ## 11111第三次更新
