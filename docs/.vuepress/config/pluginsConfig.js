@@ -1,3 +1,4 @@
+const secret=require("./Secret");//导入隐藏文件
 module.exports={
     //时间格式化
     '@vuepress/last-updated': // "上次更新"时间格式
@@ -23,8 +24,8 @@ module.exports={
         // 其他的 Vssue 配置
         owner: 'wangchangyin',//github账户名
         repo: 'docs',//github一个项目的名称
-        clientId: '55b623aafc4fbda41ebf',//注册的Client ID
-        clientSecret: '6af6c813a72b94fe3254dfd6b21b35ad4c07f24e',//注册的Client Secret
+        clientId: secret.clientId,//注册的Client ID
+        clientSecret: secret.clientSecret,//注册的Client Secret
         autoCreateIssue:true,// 自动创建评论，默认是false，最好开启，这样首次进入页面的时候就不用去点击创建评论的按钮了。
         locale:'zh-CN' //语言
     },
@@ -32,6 +33,6 @@ module.exports={
     '@vuepress/back-to-top':true,
     '@vuepress/google-analytics':
     {
-      'ga': 'G-PNZM9E937P' // UA-00000000-0
+      'ga': secret.ga // UA-00000000-0
     }
   }

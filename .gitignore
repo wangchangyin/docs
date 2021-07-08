@@ -2,3 +2,6 @@ node_modules/
 
 # vuepress
 docs/.vuepress/dist
+
+#隐藏密钥信息
+Secret.js
